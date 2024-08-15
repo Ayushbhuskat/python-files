@@ -20,3 +20,15 @@ print(my_car.fullname())
 print(my_new_car.fullname())
 
 
+class ElectricCar(Car) :
+    def __init__(self, brand, model,battery_size):
+        super().__init__(brand,model) #super means upperclass  
+        self.battery_size = battery_size
+
+
+my_tesla = ElectricCar("tesla","model s", "85kwh")  
+print(my_tesla.model)
+print(my_tesla.fullname())
+     
+
+
